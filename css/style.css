@@ -126,11 +126,11 @@ padding: 2px 60px;
 /*----------------------HOVER EFFECT----------------------*/
 
 
-.menu-list .menu-list-link:hover{
+.menu-list-link:hover{
   background-color: #ccc;
 }
 
-.menu-list .menu-list-link:hover:after{
+.menu-list-link:hover:after{
   border-color: transparent transparent transparent #ccc;
 }
 
@@ -138,7 +138,7 @@ padding: 2px 60px;
   background-color: rgba(255,255,255,0.7);
 }
 
-.gradient .menu-list-link:hover:after{
+.menu.gradient .menu-list-link:hover:after{
   border-color: transparent transparent rgba(255,255,255,0.7) transparent;
 }
 
@@ -146,16 +146,16 @@ padding: 2px 60px;
   border-color: transparent rgba(255,255,255,0.7) transparent transparent;
 }
 
-.menu-list .menu-list-item:hover:after{
+.menu.gradient .menu-list-item:hover:after{
   border-color: transparent transparent transparent rgba(255,255,255,0.7);
 }
-.menu-list .menu-list-item:hover .menu-list-link{
+.menu.gradient .menu-list-item:hover .menu-list-link{
   background-color: rgba(255,255,255,0.7);
 }
-.menu-list .menu-list-item:hover .menu-list-link:before{
+.menu.gradient .menu-list-item:hover .menu-list-link:before{
   border-color: transparent rgba(255,255,255,0.7) transparent transparent;
 }
-.menu-list .menu-list-item:hover .menu-list-link:after{
+.menu.gradient .menu-list-item:hover .menu-list-link:after{
   border-color: transparent  transparent rgba(255,255,255,0.7) transparent;
 }
 
