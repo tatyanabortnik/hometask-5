@@ -1,0 +1,161 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu{
+background: #000;
+margin: 210px 0;
+padding: 2px 60px;
+
+}
+
+.menu.gradient{
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+}
+
+.menu-list{
+  text-align: right;
+}
+
+.menu-list-item{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 25px 0 0;
+}
+
+.menu-list-link{
+  font: 32px/37px Helvetica, Arial;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  padding: 30px 25px 29px 50px;
+  display: inline-block;
+  position: relative;
+    background: rgba(255,255,255,1);
+
+}
+
+.menu-list-link:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 0;
+  height: 0;
+  border-width: 48px 0 48px 25px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+
+}
+
+.menu-list-link:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 48px 0 48px 25px;
+  border-color: transparent transparent transparent #000;
+  border-style: solid;
+}
+.menu.gradient .menu-list-item{
+  margin-left: 25px;
+  position: relative;
+}
+
+.menu.gradient .menu-list-link{
+  padding-left: 24px;
+ 
+}
+
+.menu.gradient .menu-list-link:before{
+  content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-width: 0 25px 48px 0;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+}
+
+.menu.gradient .menu-list-link:after{
+  content: '';
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-width: 0 0 48px 25px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+}
+
+.menu.gradient .menu-list-item:after{
+  content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 0;
+    height: 0;
+    border-width: 48px 0 48px 25px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    cursor: pointer;
+}
+
+
+
+/*----------------------HOVER EFFECT----------------------*/
+
+
+.menu-list .menu-list-link:hover{
+  background-color: #ccc;
+}
+
+.menu-list .menu-list-link:hover:after{
+  border-color: transparent transparent transparent #ccc;
+}
+
+.menu.gradient .menu-list-link:hover{
+  background-color: rgba(255,255,255,0.7);
+}
+
+.gradient .menu-list-link:hover:after{
+  border-color: transparent transparent rgba(255,255,255,0.7) transparent;
+}
+
+.menu.gradient .menu-list-link:hover:before{
+  border-color: transparent rgba(255,255,255,0.7) transparent transparent;
+}
+
+.menu-list .menu-list-item:hover:after{
+  border-color: transparent transparent transparent rgba(255,255,255,0.7);
+}
+.menu-list .menu-list-item:hover .menu-list-link{
+  background-color: rgba(255,255,255,0.7);
+}
+.menu-list .menu-list-item:hover .menu-list-link:before{
+  border-color: transparent rgba(255,255,255,0.7) transparent transparent;
+}
+.menu-list .menu-list-item:hover .menu-list-link:after{
+  border-color: transparent  transparent rgba(255,255,255,0.7) transparent;
+}
+
